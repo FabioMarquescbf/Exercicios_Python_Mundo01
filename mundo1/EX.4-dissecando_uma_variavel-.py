@@ -1,56 +1,52 @@
 # Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
 
-algo = input('Digite algo, para saber seu tipo: ')
-tipo = type(algo)
+# Estudo: Metodos.
 
-print(f'O tipo primitivo desse valor é {tipo}')
+# objeto.
+algo = input('Digite algo, para mostrar suas informações: ')
+
+# tipo
+# Sempre será (str), pois o (input) sempre retorna como (string).
+def tipo(algo):
+    tipo = type(algo)
+    print(f'O tipo primitivo desse valor é {tipo}')
+
+# espaço.
+def espaço(algo):
+    print('So tem espaços', algo.isspace())
 
 # numero.
-def inteiro(algo):
-    if tipo == int:
-        print('é um número? True')
-    else:
-        print('é um número? False')
+def numerico(algo):
+    print('É um número?', algo.isnumeric())
 
-# alfabético.
+# alfabetico.
 def alfabetico(algo):
-    if tipo == str:
-        print('É alfabético? True')
-    else:
-        print('É alfabético? False')
+    print('É alfabético?', algo.isalpha())
 
 # alfanúmerico.
-
+def alfanumerico(algo):
+    print('É alfanúmerico?', algo.isalnum())
 
 # maiúscula
 def maiuscula(algo):
-    if algo == algo.upper():
-        print('Está em maiúscula? True')
-    else:
-        print('Está em maiscúla? True')
+    print('Está em maiúscula?', algo.isupper())
 
 # minúscula
 def minuscula(algo):
-    if algo == algo.lower():
-        print('Está em minúscula? True')
-    else:
-        print('Está em minúscula? False')
+    print('Está em minuscula?', algo.islower())
 
 # capitalizada
 def capitalizada(algo):
-    if algo == algo.title():
-        print('Está capitalizada? True')
-    else:
-        print('Esá capitalizada? False')
+    print('Está em capitalizada?', algo.istitle())
 
-
-inteiro(algo)
+tipo(algo)
+espaço(algo)
+numerico(algo)
 alfabetico(algo)
+alfanumerico(algo)
 maiuscula(algo)
 minuscula(algo)
 capitalizada(algo)
-
-
 
 
 
