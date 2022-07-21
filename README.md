@@ -1,4 +1,4 @@
-# exercicios_python_cursoemvideo
+# exercicios_python_cursoemvideo_Mundo1
 Exercícios de python-3 do curso_em_vídeo -   https://www.cursoemvideo.com/cursos/   -  Python 3 - Mundo 1 [40 Hroras]
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white)
